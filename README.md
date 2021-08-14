@@ -8,7 +8,7 @@ A library to interact with valorant-api.com
 npm i valorant-api-js
 ```
 
-## How to Use?
+## Usage
 
 Example:
 
@@ -16,13 +16,11 @@ Example:
 const Client = require("valorant-api-js");
 
 (async () => {
-  let config = {
-    language: "en-US",
-  };
+  const config = {language: "en-US"};
 
-  let client = new Client(config); // Create a Client
-
-  let allAgents = await client.getAgents(); // request all agents data
+  const client = new Client(config); // Create a Client
+  const allAgents = await client.getAgents(); // request all agents data
+  // getPlayableAgents() would exclude the duplicate Sova
 
   console.log(allAgents); // see all agents data in console log
 })();
@@ -33,7 +31,7 @@ const Client = require("valorant-api-js");
 ## Client
 
 ```javascript
-const Client = require("valorant-api-com");
+const Client = require("valorant-api-js");
 const client = new Client(config); // config is optional
 ```
 
@@ -43,8 +41,9 @@ const client = new Client(config); // config is optional
 
 ### Client Methods
 
-- request(endpoint)
-- getAgents(uuid)
+[X] request(endpoint)
+[X] getAgents(uuid)
+
 - getPlayableAgents()
 - getBuddies(uuid)
 - getBundles(uuid)
