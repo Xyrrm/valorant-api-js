@@ -43,7 +43,7 @@ const client = new Client(config); // config is optional
 
 - [x] request(endpoint)
 - [x] [getAgents(uuid)](https://dash.valorant-api.com/endpoints/agents)
-- - getPlayableAgents()
+  - getPlayableAgents()
 - [x] [getBuddies(uuid)]()
 - [x] [getBundles(uuid)]()
 - [x] [getCompetitiveTiers(uuid)]()
