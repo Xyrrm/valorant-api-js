@@ -41,15 +41,14 @@ const client = new Client(config); // config is optional
 
 ### Client Methods
 
-[X] request(endpoint)
-[X] getAgents(uuid)
-
-- getPlayableAgents()
-- getBuddies(uuid)
-- getBundles(uuid)
-- getCompetitiveTiers(uuid)
-- getContentTiers(uuid)
-- getContracts(uuid)
+- [x] request(endpoint)
+- [x] [getAgents(uuid)](https://dash.valorant-api.com/endpoints/agents)
+- - getPlayableAgents()
+- [x] [getBuddies(uuid)]()
+- [x] [getBundles(uuid)]()
+- [x] [getCompetitiveTiers(uuid)]()
+- [x] [getContentTiers(uuid)]()
+- [x] [getContracts(uuid)]()
 - getCurrency(uuid)
 - getGamemodes(uuid)
 - getGear(uuid)
