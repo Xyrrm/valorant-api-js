@@ -44,50 +44,36 @@ const client = new Client(config); // config is optional
 - [x] request(endpoint)
 - [x] [getAgents(uuid)](https://dash.valorant-api.com/endpoints/agents)
   - getPlayableAgents()
-- [x] [getBuddies(uuid)]()
-- [x] [getBundles(uuid)]()
-- [x] [getCompetitiveTiers(uuid)]()
-- [x] [getContentTiers(uuid)]()
-- [x] [getContracts(uuid)]()
-- getCurrency(uuid)
-- getGamemodes(uuid)
-- getGear(uuid)
-- getEvents(uuid)
-- getEquippables(uuid)
-- getMaps(uuid)
-- getMissions(uuid)
-- getObjectives(uuid)
-- getPlayerCards(uuid)
-- getPlayerTitles(uuid)
-- getSeasons(uuid)
-- getSprays(uuid)
-- getSkins(uuid)
-- getSkinLevels(uuid)
-- getSkinChromas(uuid)
-- getThemes(uuid)
-- getWeapons(uuid)
-- getVersion()
+- [x] [getBuddies(uuid)](https://dash.valorant-api.com/endpoints/buddies)
+  - getBuddyLevels(uuid)
+- [x] [getBundles(uuid)](https://dash.valorant-api.com/endpoints/bundles)
+- [x] [getCompetitiveTiers(uuid)](https://dash.valorant-api.com/endpoints/competitivetiers)
+- [x] [getContentTiers(uuid)](https://dash.valorant-api.com/endpoints/contenttiers)
+- [x] [getContracts(uuid)](https://dash.valorant-api.com/endpoints/contracts)
+- [x] [getCurrencies(uuid)](https://dash.valorant-api.com/endpoints/currencies)
+- [x] [getEvents(uuid)](https://dash.valorant-api.com/endpoints/events)
+- [x] [getGamemodes(uuid)](https://dash.valorant-api.com/endpoints/gamemodes)
+  - getGamemodeEquippables(uuid)
+- [x] [getGear(uuid)](https://dash.valorant-api.com/endpoints/gear)
+- [x] [getMaps(uuid)](https://dash.valorant-api.com/endpoints/maps)
+- [x] [getPlayerCards(uuid)](https://dash.valorant-api.com/endpoints/playercards)
+- [x] [getPlayerTitles(uuid)](https://dash.valorant-api.com/endpoints/playertitles)
+- [x] [getSeasons(uuid)](https://dash.valorant-api.com/endpoints/seasons)
+  - getCompetitiveSeasons(uuid)
+- [x] [getSprays(uuid)](https://dash.valorant-api.com/endpoints/sprays)
+  - getSprayLevels(uuid)
+- [x] [getThemes(uuid)](https://dash.valorant-api.com/endpoints/themes)
+- [x] [getWeapons(uuid)](https://dash.valorant-api.com/endpoints/weapons)
+  - getSkins(uuid)
+  - getSkinLevels(uuid)
+  - getSkinChromas(uuid)
+- [x] [getVersion()](https://dash.valorant-api.com/endpoints/version)
+
+//Undocumented
+
+- [x] getMissions(uuid)
+- [x] getObjectives(uuid)
 
 # License
 
 MIT License
-
-Copyright (c) 2021 Vanxh.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
