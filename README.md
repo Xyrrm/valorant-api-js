@@ -37,9 +37,28 @@ const client = new Client(config); // config is optional
 
 ### Client Properties
 
-- language
+- [x] Languages
+  - ar-AE
+  - de-DE
+  - en-GB
+  - en-US
+  - es-ES
+  - es-MX
+  - fr-FR
+  - id-ID
+  - it-IT
+  - ja-JP
+  - ko-KR
+  - pl-PL
+  - pt-BR
+  - ru-RU
+  - th-TH
+  - tr-TR
+  - vi-VN
+  - zh-CN
+  - zh-TW
 
-### Client Methods
+### Method Documentation
 
 - [x] request(endpoint)
 - [x] [getAgents(uuid)](https://dash.valorant-api.com/endpoints/agents)
