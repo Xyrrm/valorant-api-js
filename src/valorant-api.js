@@ -33,7 +33,7 @@ class Client {
   }
 
   async getPlayableAgents() {
-    return await this.request(`agents?isPlayableChaaracter=true`);
+    return await this.request(`agents?isPlayableCharacter=true`);
   }
 
   async getBuddies(uuid) {

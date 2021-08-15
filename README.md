@@ -35,7 +35,7 @@ const Client = require("valorant-api-js");
 const client = new Client(config); // config is optional
 ```
 
-### Client Properties
+### Properties
 
 - [x] Languages
   - ar-AE
@@ -58,7 +58,7 @@ const client = new Client(config); // config is optional
   - zh-CN
   - zh-TW
 
-### Method Documentation
+### Methods
 
 - [x] request(endpoint)
 - [x] [getAgents(uuid)](https://dash.valorant-api.com/endpoints/agents)
