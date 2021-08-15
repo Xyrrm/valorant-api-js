@@ -12,20 +12,10 @@ const base_url = `https://valorant-api.com/v1/`;
 
 // main class
 class Client {
-  /**
-   * constructor()
-   * @param {object} [config]
-   * @param {string} [config.language]
-   */
   constructor(config = {}) {
     this.language = config.language || "en-US";
   }
 
-  /**
-   * request(endpoint)
-   * @param {string} [endpoint]
-   * returns {Promise <object>}
-   */
   async request(endpoint) {
     var config = {
       method: `get`,
@@ -50,6 +40,10 @@ class Client {
     return uuid ? await this.request(`buddies/${uuid}`) : await this.request(`buddies`);
   }
 
+  async getBuddyLevels(uuid) {
+    return uuid ? await this.request(`buddies/levels/${uuid}`) : await this.request(`buddies/levels`);
+  }
+
   async getBundles(uuid) {
     return uuid ? await this.request(`bundles/${uuid}`) : await this.request(`bundles`);
   }
@@ -66,36 +60,28 @@ class Client {
     return uuid ? await this.request(`contracts/${uuid}`) : await this.request(`contracts`);
   }
 
-  async getCurrency(uuid) {
-    return uuid ? await this.request(`currencies/${uuid}`) : await this.request(`currencies/`);
-  }
-
-  async getGamemodes(uuid) {
-    return uuid ? await this.request(`gamemodes/${uuid}`) : await this.request(`gamemodes`);
-  }
-
-  async getGear(uuid) {
-    return uuid ? await this.request(`gear/${uuid}`) : await this.request(`gear`);
+  async getCurrencies(uuid) {
+    return uuid ? await this.request(`currencies/${uuid}`) : await this.request(`currencies`);
   }
 
   async getEvents(uuid) {
     return uuid ? await this.request(`events/${uuid}`) : await this.request(`events`);
   }
 
-  async getEquippables(uuid) {
-    return uuid ? await this.request(`equippables/${uuid}`) : await this.request(`equippables`);
+  async getGamemodes(uuid) {
+    return uuid ? await this.request(`gamemodes/${uuid}`) : await this.request(`gamemodes`);
+  }
+
+  async getGamemodeEquippables(uuid) {
+    return uuid ? await this.request(`gamemodes/equippables/${uuid}`) : await this.request(`gamemodes/equippables`);
+  }
+
+  async getGear(uuid) {
+    return uuid ? await this.request(`gear/${uuid}`) : await this.request(`gear`);
   }
 
   async getMaps(uuid) {
     return uuid ? await this.request(`maps/${uuid}`) : await this.request(`maps`);
-  }
-
-  async getMissions(uuid) {
-    return uuid ? await this.request(`missions/${uuid}`) : await this.request(`missions`);
-  }
-
-  async getObjectives(uuid) {
-    return uuid ? await this.request(`objectives/${uuid}`) : await this.request(`objectives`);
   }
 
   async getPlayerCards(uuid) {
@@ -110,8 +96,24 @@ class Client {
     return uuid ? await this.request(`seasons/${uuid}`) : await this.request(`seasons`);
   }
 
+  async getCompetitiveSeasons(uuid) {
+    return uuid ? await this.request(`seasons/competitive/${uuid}`) : await this.request(`seasons/competitive`);
+  }
+
   async getSprays(uuid) {
     return uuid ? await this.request(`sprays/${uuid}`) : await this.request(`sprays`);
+  }
+
+  async getSprayLevels(uuid) {
+    return uuid ? await this.request(`sprays/levels/${uuid}`) : await this.request(`sprays/levels`);
+  }
+
+  async getThemes(uuid) {
+    return uuid ? await this.request(`themes/${uuid}`) : await this.request(`themes`);
+  }
+
+  async getWeapons(uuid) {
+    return uuid ? await this.request(`weapons/${uuid}`) : await this.request(`weapons`);
   }
 
   async getSkins(uuid) {
@@ -126,16 +128,17 @@ class Client {
     return uuid ? await this.request(`weapons/skinchromas/${uuid}`) : await this.request(`weapons/skinchromas`);
   }
 
-  async getThemes(uuid) {
-    return uuid ? await this.request(`themes/${uuid}`) : await this.request(`themes`);
-  }
-
-  async getWeapons(uuid) {
-    return uuid ? await this.request(`weapons/${uuid}`) : await this.request(`weapons`);
-  }
-
   async getVersion() {
     return await this.request(`version`);
+  }
+
+  //Undocumented
+  async getMissions(uuid) {
+    return uuid ? await this.request(`missions/${uuid}`) : await this.request(`missions`);
+  }
+
+  async getObjectives(uuid) {
+    return uuid ? await this.request(`objectives/${uuid}`) : await this.request(`objectives`);
   }
 }
 module.exports = Client;

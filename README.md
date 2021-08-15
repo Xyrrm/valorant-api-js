@@ -69,7 +69,7 @@ const client = new Client(config); // config is optional
   - getSkinChromas(uuid)
 - [x] [getVersion()](https://dash.valorant-api.com/endpoints/version)
 
-//Undocumented
+### Undocumented
 
 - [x] getMissions(uuid)
 - [x] getObjectives(uuid)

@@ -1,6 +1,6 @@
 {
   "name": "valorant-api-js",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "valorant-api.com wrapper",
   "main": "index.js",
   "scripts": {
